@@ -28,9 +28,13 @@ BOT_URL = "http://localhost:8080"
 LLM_PROVIDER = "openai"
 
 # Your API key (paste your key here)
+from dotenv import load_dotenv
+load_dotenv()
+
+LLM_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+
 
 
 # Model to use (leave empty for default, or specify like "gpt-4o", "claude-3-5-sonnet-20241022", etc.)
@@ -928,7 +932,7 @@ def main():
     print_header("magicpin AI Challenge — LLM Judge")
 
     # Validate configuration
-    if LLM_PROVIDER != "ollama" and not OP:
+    if LLM_PROVIDER != "ollama" and not LLM_API_KEY:
         print_fail("LLM_API_KEY is not set!")
         print_info("Edit the CONFIGURATION section at the top of this file")
         print_info("Set your API key for your chosen provider")
