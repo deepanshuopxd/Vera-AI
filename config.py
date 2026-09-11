@@ -18,9 +18,9 @@ LLM_MAX_TOKENS = 1500                               # Max response length
 # Bot Configuration
 # ──────────────────────────────────────────
 BOT_PORT = 8080
-TEAM_NAME = "Magicpin AI Challengers"
-TEAM_MEMBERS = ["Deepanshu"]
-CONTACT_EMAIL = "deepanshu@example.com"
+TEAM_NAME = "AI Challengers"
+TEAM_MEMBERS = ["Deepanshu Fulara"]
+CONTACT_EMAIL = "23219@iiitu.ac.in"
 BOT_VERSION = "1.0.0"
 
 # ──────────────────────────────────────────
