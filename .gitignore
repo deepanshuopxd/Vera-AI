@@ -2,3 +2,7 @@ venv/
 __pycache__/
 *.pyc
 .env
+
+CODE_LOGIC_EXPLANATION.md
+PROJECT_EXPLANATION.md
+STEP_BY_STEP_GUIDE.md

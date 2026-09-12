@@ -35,11 +35,11 @@ async def healthz():
 @app.get("/v1/metadata")
 async def metadata():
     return {
-        "team_name": "Magicpin AI Challengers",
-        "team_members": ["Deepanshu"],
+        "team_name": "AI Challengers",
+        "team_members": ["Deepanshu Fulara"],
         "model": "gpt-4o",                       # Using OpenAI model
         "approach": "4-context composer with trigger-kind dispatch via OpenAI",
-        "contact_email": "deepanshu@example.com",
+        "contact_email": "23219@iiitu.ac.in",
         "version": "1.0.0",
         "submitted_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     }
